@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computational Cognitive Science Lab</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <nav class="navigation">
+                <a href="index.html">Home</a>
+                <a href="#publications">Publications</a>
+                <a href="team.html">Team</a>
+                <a href="opportunities.html">Opportunities</a>
+                <a href="resources.html">Resources</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container about">
+        <!-- This is the formatting template for publication entriess -->
+        <!-- see https://github.com/pcooksey/bibtex-js/wiki/Customizable-Template#customize-publications for more details -->
+        <div style="width: 50%;">  
+        <h2>Publications</h2>
+          <bibtex src="assets/lab.bib"></bibtex>
+          <div id="bibtex_display" style="font-size:85%;"></div>
+
+           <div class="bibtex_template">
+            <br>
+              <!-- <span class="if year"> -->
+                <strong><span class="title"></span></strong><br>
+                <span class="author"></span> 
+                (<span class="year"></span>)
+                <span class="if BIBTEXTYPEKEY==ARTICLE">
+                  <span class="journal" style="font-style: italic;"></span>,
+                  <span class="volume" style="font-style: italic;"></span><span class="if number">(<span class="number"></span>)</span>,
+                </span>
+
+                <span class="if BIBTEXTYPEKEY==INPROCEEDINGS">
+                  <span class="booktitle" style="font-style: italic;">in </span>
+                </span>
+                <span class="if pages"><span class="pages"></span></span>
+                <span class="if doi">
+                  <br>
+                  <a class="bibtexVar" href="http://dx.doi.org/+DOI+" extra="doi"><span class="doi"></span></a>
+                </span>
+                <span class="if !doi">
+                  <span class="if url">
+                  <br>
+                  <a class="bibtexVar" href="+URL+" extra="url"><span class="url"></span></a>
+                </span>
+                </span>        
+
+          </div>
+        </div>
+    </main>
+
+
+
+</body>
+</html>

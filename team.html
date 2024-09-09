@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computational Cognitive Science Lab</title>
+    <link rel="stylesheet" href="styles.css">
+    <style type="text/css">
+
+
+.card {
+    margin: 0px;
+    display: inline-block;
+    padding: 10px;
+    max-width: 20%; /* Control the width of each card */
+    box-sizing: border-box;
+    vertical-align: top;
+    border: none; /* Removes the border */
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.card-image {
+    height: 250px; /* Set a fixed height for images */
+    width: 100%; /* Set a fixed width for images to make them square */
+    object-fit: cover; /* Crop the images to fit within the dimensions */
+    display: block;
+    margin: 0 auto;
+}
+
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Adjust spacing between cards */
+    gap: 25px;
+}
+
+.card h3 {
+    font-size: 1.2em; /* Adjust heading size */
+    margin: 5px 0;
+    text-align: left;
+}
+
+.card p {
+    font-size: 0.9em; /* Adjust paragraph size */
+    margin: 5px 0;
+    text-align: left;
+}
+
+h2 {
+    font-size: 1.5em; /* Adjust the size of the section heading */
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <nav class="navigation">
+                <a href="index.html">Home</a>
+                <a href="publications.html">Publications</a>
+                <a href="team.html">Team</a>
+                <a href="opportunities.html">Opportunities</a>
+                <a href="resources.html">Resources</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="team">
+            <h2 style="text-align: left;">Current Members</h2>
+            <br>
+            <div class="grid">
+                <div class="card">
+                    <img src="assets/img/WDT.jpg" alt="" class="card-image">
+                    <h3>Bill Thompson</h3>
+                    <p>Principal Investigator</p>
+                    <a href="https://billdthompson.github.io/">Website</a>
+                </div>
+                <div class="card">
+                    <img src="assets/img/DY.jpg" alt="" class="card-image">
+                    <h3>Dhara Yu</h3>
+                    <p>Graduate Student</p>
+                    <a href="https://dharakyu.com/">Website</a>
+                </div>
+                <div class="card">
+                    <img src="assets/img/MML.jpeg" alt="" class="card-image">
+                    <h3>Maria Martin Lopez</h3>
+                    <p>Graduate Student</p>
+                    <a href="https://mariamartinlopez5.wixsite.com/mariamartinlopez">Website</a>
+                </div>
+                <div class="card">
+                    <img src="assets/img/KK.jpg" alt="" class="card-image">
+                    <h3>Karthikeya Kaushik</h3>
+                    <p>Graduate Student</p>
+                </div>
+                <div class="card">
+                    <img src="assets/img/QG.png" alt="" class="card-image">
+                    <h3>Qi Guo</h3>
+                    <p>Research Assistant</p>
+                </div>
+                <div class="card">
+                    <img src="assets/img/AJ.jpg" alt="" width="50%" class="card-image">
+                    <h3>Ankita Janakiraman</h3>
+                    <p>Research Assistant</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
